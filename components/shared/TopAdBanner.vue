@@ -1,6 +1,6 @@
 <template>
   <div class="row">
-    <VueImage :url="url" />
+    <VueImage :url="url" :styles="{width: '100%', height: '60px'}"/>
   </div>
 </template>
 
