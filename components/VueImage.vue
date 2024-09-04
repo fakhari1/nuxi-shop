@@ -1,5 +1,5 @@
 <template>
-  <img :src="url" alt="" :style="{width: width, height: height}">
+  <img :src="url" alt="" :style="{...styles}">
 </template>
 
 <script>
@@ -10,12 +10,12 @@ export default {
       required: true,
       type: String,
     },
-    width: {
-      default: '100%'
+    styles: {
+      default: {
+        width: 'auto',
+        height: 'auto',
+      }
     },
-    height: {
-      default: 'auto',
-    }
   }
 }
 </script>
