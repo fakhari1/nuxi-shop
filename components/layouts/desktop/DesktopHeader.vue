@@ -1,15 +1,15 @@
 <template>
-  <div class="row">
-    <TopAdBanner />
-  </div>
+  <TopAdBanner/>
+  <TopNavigationBar/>
 </template>
 
 <script>
 import TopAdBanner from "~/components/shared/TopAdBanner.vue";
+import TopNavigationBar from "~/components/shared/TopNavigationBar.vue";
 
 export default {
   name: "Header",
-  components: {TopAdBanner}
+  components: {TopNavigationBar, TopAdBanner}
 }
 </script>
 
